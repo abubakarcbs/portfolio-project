@@ -16,12 +16,110 @@
   }
 }
 
+@layer components {
+  .gradient {
+    @apply bg-gradient-to-r from-blue-500 to-rose-700;
+  }
+
+  #h1 {
+    padding: 40px;
+    margin-top: 140px;
+    margin-left: 250px;
+    text-decoration:underline;
+    text-decoration-color:aqua;
+  }
+   #container {
+    width: 95%;
+    height: fit-content;
+    padding-left: 250px;
+    margin-right: 50px;
+   }
+   
+   #verdistance{
+    margin-right: 20px;
+    padding-bottom: 990px;
+   }
+   .plan {
+    @apply bg-white p-6 ml-6 gap-x-10 rounded-lg shadow-md;
+    width: 10px;
+    height: 20px;
+    align-items: center;
+}
+
+   .space-between {
+    margin-right: 10px; 
+}
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image:linear-gradient(to right, rgb(10, 111, 243),white);
+  margin: 20px;
+}
+.roundbox {
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 350px;
+  margin-top: 70px;
+}
+.h3 {
+  font-size: x-large;
+  font-weight: bold; /* Use font-weight instead of font:bold; */
+  padding-left: 300px;
+}
+
+.h4 {
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 300px;
+  margin-left: "50px";
+}
+span {
+  @apply ml-4 py-2 px-5 text-white text-sm rounded-full;
+height: fit-content;
+background-image: linear-gradient(to right, rgb(22, 103, 224),white);
+}
+.row-container {
+  display: flex;
+  justify-content: flex-start; /* Align text to the right */
+  padding: 20px; /* Optional padding */
+}
+
+p {
+  margin: 0; /* Remove default margin for the paragraph */
+}
+.arrow-button {
+  position: fixed;
+  right: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  top: 20%; 
+  transform: translateY(10%);
+}
+.h8{
+    padding: 40px;
+    margin-top: 140px;
+    margin-left: 250px;
+    text-decoration:underline;
+    text-decoration-color:rgb(5, 118, 247);
+  }
+
+
+
+
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      #0cfae6
     )
     rgb(var(--background-start-rgb));
 }

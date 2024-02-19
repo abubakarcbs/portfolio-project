@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,35 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        
+        </body>
+
+  <header className="container flex justify-end flex-wrap minHeight-120vh">
+    <h1 className="container item-start padding 20px margin-bottom 20px"> 
+    
+      <Link href="/" style={{
+        paddingTop:"40xp",
+        marginLeft:"160xp",
+        fontSize:"30px",
+        font:"bold",
+      }}>
+        Muhammad Abu Bakar
+      </Link>
+    </h1>
+  </header>
+
+  <main>{children}</main>
+
+  
+
+  <footer className="container flex justify-evenly flex-wrap text-space minHeight-50hv">
+     muhammadabubakarcbs@gmail.com
+
+
+     +92 317 4533400
+  </footer>
+
     </html>
   )
 }
